@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai1:
+        // let arrays = [1, 3, 4, 5, 6, 9, 21, 34, 12]
+        // var soLe = arrays.filter((array) => {
+        //     return array % 2 != 0
+        // })
+        // var soChan = arrays.filter((array) => {
+        //     return array % 2 == 0
+        // })
+        // console.log(soChan)
+        // console.log(soLe)
+
+
+
+        //bai2
+        // let arrays = [1, 3, 4, 5, 6, 9, 21, 34, 12]
+        // let soChan = arrays.filter((array) => {
+        //     return array % 2 == 0
+        // })
+        // let tongSoChan = soChan.reduce((a, b) =>
+        //     a + b, 0
+        // )
+        // console.log(tongSoChan)
+
+
+
+        //bai3
+        // let arrays = [1, 3, 4, 5, 6, 9, 21, 34, 12]
+
+        // let newArray = arrays.map(function (item) {
+        //     if (item % 2 == 0) {
+        //         return item + 1
+        //     } else {
+        //         return item
+        //     }
+        // })
+
+        // console.log(newArray)
+
+
+
+        //bai4
+        // let stringMethod1 = "string1 string2 string10"
+        // let stringMethod2 = "string12, string2, string10"
+
+        // function lambai(a, b) {
+        //     if (a.includes("string1")) {
+        //         console.log("Yes")
+        //     } else {
+        //         console.log("No")
+        //     }
+
+
+        //     if (b.includes("string1")) {
+        //         console.log("Yes")
+        //     } else {
+        //         console.log("No")
+        //     }
+        // }
+        // lambai(stringMethod1, stringMethod2)
+
+
+
+        //bai5
+        // let str = "StrinG1, striNg2, ABSC"
+
+        // let low = str.toLowerCase().split(", ").map((element) => {
+        //     return element.charAt(0).toUpperCase() + element.slice(1)
+        // })
+        // console.log(low.join(", "))
+
+
+
+        //bài 6
+        // let fn = [1, 2, 3, 4]
+
+        // let ft = []
+
+        // function bai6(start, end, cb) {
+        //     if (start >= end) {
+        //         cb(start)
+        //         return bai6(start - 1, end, cb)
+        //     }
+        // }
+
+        // bai6(fn.length - 1, 0, function (index) {
+        //     console.log([fn[index], ...ft])
+        // })
+
+
+
+        //bai 8
+        // str = "string1, string2, string3"
+
+        // let newStr = str.split(", ").map((e) => {
+        //     return e.replace("str", "char")
+        // })
+        // console.log(newStr.join(", "))
+
+        //bai 10
+        function isprime(n) {
+            let flag = 1
+
+            if (n < 2) return flag = 0
+
+            let i = 2;
+            while (i < n) {
+                if (n % i == 0) {
+                    flag = 0
+                    break
+                }
+                i++
+            }
+            return flag
+        }
+
+        let sogioihannhap = 12
+        let array = []
+        for (let j = 0; j <= sogioihannhap; j++) {
+            j.push(array())
+
+        }
+
+        for (let i = 0; i < array.length; i++) {
+            if (isprime(array[i]) == 1) console.log(array[i])
+        }
+
+    </script>
+</body>
+
+</html>
